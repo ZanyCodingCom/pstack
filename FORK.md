@@ -7,6 +7,7 @@ This repository is the Claude Code build of pstack by Lauren Tan, copied from [`
 - Model defaults that named a non-Claude model read `inherit-parent`. The Claude Code adapter already mapped them to the session model, so behaviour in Claude Code is unchanged. Run `/pstack:setup-pstack` to choose real models per role.
 - The bot UI skill and the links to it are removed, because it only serves a bot product this fork does not use.
 - `scripts/check-banned-terms.sh` fails when the tree names an excluded model or product. CI runs it on every push and pull request.
+- `version` carries a `-zc.N` suffix. Raise N for every fork-only change, because an install updates only when the version changes.
 
 ## Taking upstream changes
 
